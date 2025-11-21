@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>King of Perfume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+
+    <nav class="navegacion">
+        <a href="index.html" class="nav-link active">Información</a>
+        <a href="formulario.html" class="nav-link">Formulario</a>
+        <a href="noticias.html" class="nav-link">Noticias</a>
+    </nav>
+
+    <!-- INFORMACION DE LA PERFUMERIA -->
+    <div class="page-container">
+        <section class="info-empresa">
+            <header>
+                <h1>KING OF PERFUME</h1>
+                <p class="subtitle">¡El poder del buen aroma!</p>
+            </header>
+
+            <div class="info-content">
+
+                <div class="info-item">
+                    <h3>Logo</h3>
+                    <div class="logo-container">
+                        <img src="img/logo.png" alt="Logo de la empresa" class="logo" />
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <h3>Misión</h3>
+                    <p id="mision-empresa">
+                        Ser el máximo referente de la alta perfumería, ofreciendo a nuestros clientes una excelente selección de fragancias exclusivas y de la más alta calidad, proporcionando una experiencia de compra lujosa y personalizada que eleva el uso del perfume de un simple accesorio a una declaración de poder, distinción y carácter inolvidable.
+                    </p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Visión</h3>
+                    <p id="vision-empresa">
+                        Consolidarnos como la casa de perfumes de lujo por excelencia a nivel global, donde cada botella representa la cumbre de la sofisticación olfativa. Buscamos que el nombre "King of Perfume" sea sinónimo de autoridad, elegancia y la esencia que te permite contar tu historia sin decir una palabra, dejando una impresión imborrable.
+                    </p>
+                </div>
+                
+                <div class="info-item">
+                    <h3>Propósito de la Perfumería</h3>
+                    <p id="proposito-empresa">
+                        Ayudar a las personas a dejar una huella memorable y positiva en el mundo, al crear un aroma personal que se entrelaza con sus historias y perdura en la memoria de sus seres queridos.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CARRUSEL -->
+        <div class="container-fluid mt-4">
+            <div class="row">
+
+                <div class="col-12 p-0">
+                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./img/carrusel1.jpg" class="d-block w-100 carrusel-img" alt="Imagen 1" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/carrusel2.jpg" class="d-block w-100 carrusel-img" alt="Imagen 2" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/carrusel3.jpg" class="d-block w-100 carrusel-img" alt="Imagen 3" />
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- PRODUCTOS -->
+        <h2 class="title">Nuestros Productos</h2>
+        <div id="productList" class="products"></div>
+
+    </div>
+
+
+    <script src="./js/productos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

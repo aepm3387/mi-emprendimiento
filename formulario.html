@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - Cuestionario</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    
+    <nav class="navegacion">
+        <a href="index.html" class="nav-link">Información</a>
+        <a href="formulario.html" class="nav-link active">¿QUE TANTO SABES DE PERFUMERÍA?</a>
+        <a href="noticias.html" class="nav-link">Noticias</a>
+    </nav>
+
+    <div class="page-container">
+        <section class="formulario-page">
+            <h1>Formulario</h1>
+            <div class="form-content">
+                <p class="form-description">¿Cuánto sabes de perfumería?</p>
+                <p class="form-subtitle">(Cuestionario de 6 preguntas)</p>
+                
+                <form id="cuestionario-form">
+                    <div class="pregunta" id="pregunta-1">
+                        <label>1. ¿Qué son las “notas de salida”?</label>
+                        <select name="p1" required>
+                            <option value="">Seleccione una respuesta</option>
+                            <option value="correcta">Las que se perciben inmediatamente al aplicar el perfume</option>
+                            <option value="incorrecta">Las que aparecen al final del día</option>
+                            <option value="incorrecta">Las más intensas del perfume</option>
+                        </select>
+                    </div>
+
+                    <div class="pregunta" id="pregunta-2">
+                        <label>2. ¿Qué tipo de producto tiene mayor concentración de aceites aromáticos?</label>
+                        <select name="p2" required>
+                            <option value="">Seleccione una respuesta</option>
+                            <option value="incorrecta">Eau de Parfum</option>
+                            <option value="correcta">Perfume/Parfum (extracto)</option>
+                            <option value="incorrecta">Eau de Cologne</option>
+                        </select>
+                    </div>
+
+                    <div class="pregunta" id="pregunta-3">
+                        <label>3. ¿En qué zonas es mejor aplicar perfume?</label>
+                        <select name="p3" required>
+                            <option value="">Seleccione una respuesta</option>
+                            <option value="incorrecta">En la ropa</option>
+                            <option value="incorrecta">En los pies</option>
+                            <option value="correcta">En los puntos de pulso (muñecas, cuello, detrás de orejas)</option>
+                        </select>
+                    </div>
+
+                    <div class="pregunta" id="pregunta-4">
+                        <label>4. ¿Qué familia olfativa es conocida por aromas frescos y limpios?</label>
+                        <select name="p4" required>
+                            <option value="">Seleccione una respuesta</option>
+                            <option value="incorrecta">Amaderada</option>
+                            <option value="correcta">Cítrica</option>
+                            <option value="incorrecta">Floral</option>
+                        </select>
+                    </div>
+
+                    <div class="pregunta" id="pregunta-5">
+                        <label>5. ¿Qué ingrediente es común en perfumes masculinos amaderados?</label>
+                        <select name="p5" required>
+                            <option value="">Seleccione una respuesta</option>
+                            <option value="correcta">Sándalo</option>
+                            <option value="incorrecta">Rosa</option>
+                            <option value="incorrecta">Lavanda</option>
+                        </select>
+                    </div>
+
+                    <div class="pregunta" id="pregunta-6">
+                        <label>6. ¿Qué puede hacer que un mismo perfume huela diferente en dos personas?</label>
+                        <select name="p6" required>
+                            <option value="">Seleccione una respuesta</option>
+                            <option value="incorrecta">El género</option>
+                            <option value="correcta">El pH, la dieta y la piel de cada persona</option>
+                            <option value="incorrecta">El color de piel</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">Enviar Respuestas</button>
+                </form>
+
+                <div id="resultado" class="resultado" style="display: none;">
+                    <div id="premio-imagen"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="./js/cuestionario.js"></script>
+   
+</body>
+</html>
+

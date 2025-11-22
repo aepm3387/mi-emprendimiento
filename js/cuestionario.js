@@ -29,13 +29,13 @@ if (cuestionarioForm) {
       imagenPremio =
         "https://i.gifer.com/Khdq.gif";
       mensaje =
-        "<h3>¡Felicitaciones! 🏆</h3><p>Acertaste todas las preguntas. ¡Eres un experto en perfumeria!</p>";
+        "<h3>¡Felicitaciones! </h3><p>Acertaste todas las preguntas. ¡Eres un experto en perfumeria!</p>";
     } else if (correctas >= 3 && correctas <= 5) {
       // Segundo premio por acertar entre 3 y 5
       imagenPremio =
         "https://i.gifer.com/origin/df/df642e16f94a4790ed1f286137554173_w200.gif";
       mensaje =
-        "<h3>¡Buen trabajo! 🥈</h3><p>Acertaste " +
+        "<h3>¡Buen trabajo! </h3><p>Acertaste " +
         correctas +
         " de 6 preguntas. Sigue aprendiendo sobre perfumeria.</p>";
     } else if (correctas < 3) {
@@ -43,7 +43,7 @@ if (cuestionarioForm) {
       imagenPremio =
         "https://media.tenor.com/Ff2re2ArPSAAAAAM/perdimos-derrota.gif";
       mensaje =
-        "<h3>¡Sigue intentando! 💪</h3><p>Acertaste " +
+        "<h3>¡Sigue intentando! </h3><p>Acertaste " +
         correctas +
         " de 6 preguntas. No te rindas, sigue aprendiendo.</p>";
     }
